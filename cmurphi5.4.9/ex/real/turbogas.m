@@ -69,8 +69,8 @@ const
     max_pressure:        13;
     
     -- Exh Temp Limiter parameters
-    kp_3:                10;  --10kw/�C
-    ki_3:                5;   -- 5kw/�C/s  
+    kp_3:                10;  --10kw/°C
+    ki_3:                5;   -- 5kw/°C/s  
     
     c:                   540;
     FG102_max:           1.0;
@@ -556,7 +556,7 @@ end; -- clamp
 -- invariants
 --------------------------------
 
-invariant "power ok"
+invariant "power ok"                  //不变式 就类似于约束条件  如果不满足  就会报错“ERROR”
     (Power>=1300) & (Power<=2500);
 
 

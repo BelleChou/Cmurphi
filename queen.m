@@ -2,7 +2,7 @@ const queenNUM:8;
       zero:0;
 Type queen:1..queenNUM;
 var
-   a：array[queen] of Record
+   a：array[queen] of Record  //记录所占的行数
     occupied:zero
     end;
 
@@ -14,7 +14,7 @@ ruleset i : queen; j:queen do
 		rule "occupied"         
     	(!b[i])&(!c[i+j])&(!d[j-i])
 		==> begin
-            a[j]:=i;//皇后放置在此行
+            a[j]:=i;//皇后j放置在i行
             b[i].occupied:=true;//占领第i行
             c[i+j].occupied:=true;//占领右上
             d[j-i].occupied:=true;//占领右下
