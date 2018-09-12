@@ -1,0 +1,13 @@
+id,n[1],n[2],x
+0,I,I,true
+1,T,I,true
+2,I,T,true
+3,C,I,false
+4,T,T,true
+5,I,C,false
+6,E,I,false
+7,C,T,false
+8,T,C,false
+9,I,E,false
+10,E,T,false
+11,T,E,false
