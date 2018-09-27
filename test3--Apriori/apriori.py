@@ -37,9 +37,8 @@ def getTransList():
     return transDict
 
 def loadDataSet():
-    transDict=getTransList()
-    dataset=[transDict[key] for key in transDict.keys()]
-    print dataset
+    #
+    dataset=[[]]
     return dataset
 
 def createC1(dataSet):
